@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- Instantiate the UR, Yaskawa, and OptiTrack systems -->
+  <include ns="ura" file="$(find usna_ur_ros)/launch/robot_interface_URx.launch" />
+  <include ns="ysk" file="$(find usna_sia20f)/launch/robot_interface_sia20f.launch" />
+  <include file="$(find vrpn_client_ros)/launch/vrpn_optitrack.launch" />
+
+  <!-- Create nodes for streaming optitrack data -->
+
+</launch>
